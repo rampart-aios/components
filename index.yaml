@@ -46,4 +46,20 @@ entries:
     urls:
     - https://github.com/rampart-aios/components/releases/download/batch-uploader-0.5.0/batch-uploader-0.5.0.tgz
     version: 0.5.0
-generated: "2023-06-19T21:56:47.834467-07:00"
+  generic-service:
+  - annotations:
+      petuum.com/rampartComponentMetadata: |
+        $ui:
+          core: true
+          system: false
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-06-19T22:02:26.359776-07:00"
+    description: A Helm chart for Kubernetes
+    digest: b928b4316ced09cf23cf1d9d9a1508228fc264ea9137e10b6f7d7f484264e83a
+    name: generic-service
+    type: application
+    urls:
+    - https://github.com/rampart-aios/components/releases/download/generic-service-0.5.1/generic-service-0.5.1.tgz
+    version: 0.5.1
+generated: "2023-06-19T22:02:26.359785-07:00"
