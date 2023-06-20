@@ -1,5 +1,30 @@
 apiVersion: v1
 entries:
+  batch-executor:
+  - annotations:
+      petuum.com/rampartComponent: |
+        inputs:
+          - name: input_*
+            type: volume
+            mountPath: /input_*
+        outputs:
+          - name: output_*
+            type: volume
+            mountPath: /output_*
+      petuum.com/rampartComponentMetadata: |
+        $ui:
+          core: true
+          system: false
+    apiVersion: v2
+    appVersion: 0.4.0
+    created: "2023-06-19T21:56:47.660562-07:00"
+    description: A Helm chart for Kubernetes
+    digest: 7f57d40c9a78ebbc6c1283e439a87bba162f1050d456aae257f28e5a18b61938
+    name: batch-executor
+    type: application
+    urls:
+    - https://github.com/rampart-aios/components/releases/download/batch-executor-0.7.0/batch-executor-0.7.0.tgz
+    version: 0.7.0
   batch-uploader:
   - annotations:
       petuum.com/rampartComponent: |
@@ -21,4 +46,4 @@ entries:
     urls:
     - https://github.com/rampart-aios/components/releases/download/batch-uploader-0.5.0/batch-uploader-0.5.0.tgz
     version: 0.5.0
-generated: "2023-06-19T21:44:55.628563-07:00"
+generated: "2023-06-19T21:56:47.834467-07:00"
