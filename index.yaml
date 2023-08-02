@@ -9,7 +9,55 @@ entries:
         outputs: []
     apiVersion: v2
     appVersion: 2.15.2-debian
+    created: "2023-08-02T01:49:33.062126-07:00"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.1.0
+    description: A Helm chart for Apache APISIX
+    digest: 0fb21c696e78fb36e5cd769515baf2938192ba084389043131bcbbc3b88dd1db
+    icon: https://apache.org/logos/res/apisix/apisix.png
+    maintainers:
+    - name: tao12345666333
+    name: apisix
+    type: application
+    urls:
+    - apisix-0.5.0-2.15.2.tgz
+    version: 0.5.0-2.15.2
+  - annotations:
+      petuum.com/rampartComponent: |
+        provides:
+          - apisix
+        inputs: []
+        outputs: []
+    apiVersion: v2
+    appVersion: 2.15.2-debian
     created: "2023-07-31T20:45:38.229077-07:00"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: https://charts.bitnami.com/bitnami
+      version: 8.6.0
+    description: A Helm chart for Apache APISIX
+    digest: 07b844ab221d7f748f4dd5fe134407774558eeed4852b120acbc9996b9716f1f
+    icon: https://apache.org/logos/res/apisix/apisix.png
+    maintainers:
+    - name: tao12345666333
+    name: apisix
+    type: application
+    urls:
+    - apisix-0.4.9-2.15.2.tgz
+    version: 0.4.9-2.15.2
+  - annotations:
+      petuum.com/rampartComponent: |
+        provides:
+          - apisix
+        inputs: []
+        outputs: []
+    apiVersion: v2
+    appVersion: 2.15.2-debian
+    created: "2023-08-02T01:49:32.859802-07:00"
     dependencies:
     - condition: etcd.enabled
       name: etcd
@@ -98,4 +146,4 @@ entries:
     urls:
     - https://github.com/rampart-aios/components/releases/download/generic-service-0.5.1/generic-service-0.5.1.tgz
     version: 0.5.1
-generated: "2023-07-31T20:45:39.148027-07:00"
+generated: "2023-08-02T01:49:33.80128-07:00"
