@@ -1,5 +1,30 @@
 apiVersion: v1
 entries:
+  apisix:
+  - annotations:
+      petuum.com/rampartComponent: |
+        provides:
+          - apisix
+        inputs: []
+        outputs: []
+    apiVersion: v2
+    appVersion: 2.15.2-debian
+    created: "2023-08-03T14:44:56.869786-07:00"
+    dependencies:
+    - condition: etcd.enabled
+      name: etcd
+      repository: https://charts.bitnami.com/bitnami
+      version: 9.1.0
+    description: A Helm chart for Apache APISIX
+    digest: 693e6fef1f00739084329c524ea5909851e62c984307472ca24ccd0c9b803ca9
+    icon: https://apache.org/logos/res/apisix/apisix.png
+    maintainers:
+    - name: tao12345666333
+    name: apisix
+    type: application
+    urls:
+    - apisix-0.5.1-2.15.2.tgz
+    version: 0.5.1-2.15.2
   auth-aux:
   - apiVersion: v2
     appVersion: 1.5.1
@@ -73,4 +98,4 @@ entries:
     urls:
     - https://github.com/rampart-aios/components/releases/download/generic-service-0.5.1/generic-service-0.5.1.tgz
     version: 0.5.1
-generated: "2023-08-02T01:49:33.80128-07:00"
+generated: "2023-08-03T14:44:57.598997-07:00"
