@@ -9,7 +9,7 @@ entries:
         outputs: []
     apiVersion: v2
     appVersion: 2.15.2-debian
-    created: "2023-08-03T14:44:56.869786-07:00"
+    created: "2023-09-06T13:20:37.544603+04:00"
     dependencies:
     - condition: etcd.enabled
       name: etcd
@@ -28,9 +28,9 @@ entries:
   auth-aux:
   - apiVersion: v2
     appVersion: 1.5.1
-    created: "2023-07-31T18:12:20.534917-07:00"
+    created: "2023-09-06T13:20:37.544864+04:00"
     description: A Helm auxiliary chart for auth resources in Rampart
-    digest: d9fa20607eddad163ae3bf3916b928ebcbb4be96c75425c3f554c85196d0eb6a
+    digest: 414603f2ecd5f7ec79f109bbadebc0a41df99601b07a2426bf5c0ef8001a0da0
     name: auth-aux
     type: application
     urls:
@@ -53,14 +53,38 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.4.0
-    created: "2023-06-19T21:56:47.660562-07:00"
+    created: "2023-09-06T13:20:37.545584+04:00"
     description: A Helm chart for Kubernetes
-    digest: 7f57d40c9a78ebbc6c1283e439a87bba162f1050d456aae257f28e5a18b61938
+    digest: 8a91ca3500febd03d86e26da4fd214a65861bfaf0bd1ec8bc9bf7d9e875dfdb3
     name: batch-executor
     type: application
     urls:
-    - https://github.com/rampart-aios/components/releases/download/batch-executor-0.7.0/batch-executor-0.7.0.tgz
+    - batch-executor-0.7.0.tgz
     version: 0.7.0
+  - annotations:
+      petuum.com/rampartComponent: |
+        inputs:
+          - name: input_*
+            type: volume
+            mountPath: /input_*
+        outputs:
+          - name: output_*
+            type: volume
+            mountPath: /output_*
+      petuum.com/rampartComponentMetadata: |
+        $ui:
+          core: true
+          system: false
+    apiVersion: v2
+    appVersion: 0.4.0
+    created: "2023-09-06T13:20:37.545276+04:00"
+    description: A Helm chart for Kubernetes
+    digest: 89d9d891d58efb7f040eb8778243a41f337796c6c98e9813aad5e4ac9245914e
+    name: batch-executor
+    type: application
+    urls:
+    - batch-executor-0.7.0-3f6e9d22.tgz
+    version: 0.7.0-3f6e9d22
   batch-uploader:
   - annotations:
       petuum.com/rampartComponent: |
@@ -74,14 +98,34 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.2.1
-    created: "2023-06-19T21:44:55.62853-07:00"
+    created: "2023-09-06T13:20:37.546148+04:00"
     description: A Helm chart for Kubernetes
-    digest: 0c32f66227567e3832d156413d51950b778f1b858e3f631751b6606cf61c6356
+    digest: b4173e6f92c64cde786511e090952df24c24188bd3129eda82303c2f71138f20
     name: batch-uploader
     type: application
     urls:
-    - https://github.com/rampart-aios/components/releases/download/batch-uploader-0.5.0/batch-uploader-0.5.0.tgz
+    - batch-uploader-0.5.0.tgz
     version: 0.5.0
+  - annotations:
+      petuum.com/rampartComponent: |
+        inputs: []
+        outputs:
+          - name: "*"
+            type: volume
+      petuum.com/rampartComponentMetadata: |
+        $ui:
+          core: true
+          system: false
+    apiVersion: v2
+    appVersion: 0.2.1
+    created: "2023-09-06T13:20:37.545911+04:00"
+    description: A Helm chart for Kubernetes
+    digest: 78cd708d468f24951e1fb3a4896b1727666170419e40aff4d1cf711a8a906324
+    name: batch-uploader
+    type: application
+    urls:
+    - batch-uploader-0.2.1-1a567c1b.tgz
+    version: 0.2.1-1a567c1b
   generic-service:
   - annotations:
       petuum.com/rampartComponentMetadata: |
@@ -90,12 +134,29 @@ entries:
           system: false
     apiVersion: v2
     appVersion: latest
-    created: "2023-06-19T22:02:26.359776-07:00"
+    created: "2023-09-06T13:20:37.546941+04:00"
     description: A Helm chart for Kubernetes
-    digest: b928b4316ced09cf23cf1d9d9a1508228fc264ea9137e10b6f7d7f484264e83a
+    digest: 99680d1531065ef4060357fc2444be4cc343ed6f63a3a3f2d551d99df45119b7
     name: generic-service
     type: application
     urls:
-    - https://github.com/rampart-aios/components/releases/download/generic-service-0.5.1/generic-service-0.5.1.tgz
+    - generic-service-0.5.1.tgz
     version: 0.5.1
-generated: "2023-08-03T14:44:57.598997-07:00"
+  ray-job:
+  - annotations:
+      petuum.com/rampartComponent: |
+        inputs: []
+        outputs: []
+        provides: []
+        requires: ["KuberayOperator"]
+    apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-09-06T13:20:37.547948+04:00"
+    description: A Helm chart for Kubernetes
+    digest: 38a45b1413b9f332e52bd8ce6e65ac66377a86cea8f6e6562c37e2df9118c6fb
+    name: ray-job
+    type: application
+    urls:
+    - ray-job-0.1.1-9e9a0ffc.tgz
+    version: 0.1.1-9e9a0ffc
+generated: "2023-09-06T13:20:37.539758+04:00"
