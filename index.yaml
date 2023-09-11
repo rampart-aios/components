@@ -9,7 +9,7 @@ entries:
         outputs: []
     apiVersion: v2
     appVersion: 2.15.2-debian
-    created: "2023-09-11T11:35:11.747411+04:00"
+    created: "2023-09-11T13:56:44.904098+04:00"
     dependencies:
     - condition: etcd.enabled
       name: etcd
@@ -28,7 +28,7 @@ entries:
   auth-aux:
   - apiVersion: v2
     appVersion: 1.5.1
-    created: "2023-09-11T11:35:11.747793+04:00"
+    created: "2023-09-11T13:56:44.904528+04:00"
     description: A Helm auxiliary chart for auth resources in Rampart
     digest: 414603f2ecd5f7ec79f109bbadebc0a41df99601b07a2426bf5c0ef8001a0da0
     name: auth-aux
@@ -53,7 +53,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.4.0
-    created: "2023-09-11T11:35:11.749497+04:00"
+    created: "2023-09-11T13:56:44.905718+04:00"
     description: A Helm chart for Kubernetes
     digest: 8a91ca3500febd03d86e26da4fd214a65861bfaf0bd1ec8bc9bf7d9e875dfdb3
     name: batch-executor
@@ -77,7 +77,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.4.0
-    created: "2023-09-11T11:35:11.748989+04:00"
+    created: "2023-09-11T13:56:44.905086+04:00"
     description: A Helm chart for Kubernetes
     digest: 41f48a219e97b9a888d5a83dca3cb7bbd27f1e3b8c60091642ef5a26c823c8ef
     name: batch-executor
@@ -98,7 +98,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.2.1
-    created: "2023-09-11T11:35:11.750429+04:00"
+    created: "2023-09-11T13:56:44.906654+04:00"
     description: A Helm chart for Kubernetes
     digest: b4173e6f92c64cde786511e090952df24c24188bd3129eda82303c2f71138f20
     name: batch-uploader
@@ -118,7 +118,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.2.1
-    created: "2023-09-11T11:35:11.74994+04:00"
+    created: "2023-09-11T13:56:44.906169+04:00"
     description: A Helm chart for Kubernetes
     digest: 78cd708d468f24951e1fb3a4896b1727666170419e40aff4d1cf711a8a906324
     name: batch-uploader
@@ -134,7 +134,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: latest
-    created: "2023-09-11T11:35:11.751665+04:00"
+    created: "2023-09-11T13:56:44.909688+04:00"
     description: A Helm chart for Kubernetes
     digest: 99680d1531065ef4060357fc2444be4cc343ed6f63a3a3f2d551d99df45119b7
     name: generic-service
@@ -142,10 +142,25 @@ entries:
     urls:
     - generic-service-0.5.1.tgz
     version: 0.5.1
+  - annotations:
+      petuum.com/rampartComponentMetadata: |
+        $ui:
+          core: true
+          system: false
+    apiVersion: v2
+    appVersion: latest
+    created: "2023-09-11T13:56:44.908197+04:00"
+    description: A Helm chart for Kubernetes
+    digest: de1a0b799f5c754be27dd693c7bdc7f823598fb00a9190a2199b06266e3e02a6
+    name: generic-service
+    type: application
+    urls:
+    - generic-service-0.5.1-8f875448.tgz
+    version: 0.5.1-8f875448
   jupyterlab-component:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-09-11T11:35:11.752054+04:00"
+    created: "2023-09-11T13:56:44.910184+04:00"
     description: A Helm chart for Kubernetes
     digest: c23aa4c01fcee4dea44eb87d68c4a50dbfdb21ae94b7cd0cec6517bae8db18bf
     name: jupyterlab-component
@@ -162,7 +177,7 @@ entries:
         requires: ["KuberayOperator"]
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-09-11T11:35:11.753314+04:00"
+    created: "2023-09-11T13:56:44.912442+04:00"
     description: A Helm chart for Kubernetes
     digest: 38a45b1413b9f332e52bd8ce6e65ac66377a86cea8f6e6562c37e2df9118c6fb
     name: ray-job
@@ -170,4 +185,4 @@ entries:
     urls:
     - ray-job-0.1.1-9e9a0ffc.tgz
     version: 0.1.1-9e9a0ffc
-generated: "2023-09-11T11:35:11.743915+04:00"
+generated: "2023-09-11T13:56:44.900145+04:00"
