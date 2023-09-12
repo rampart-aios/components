@@ -15,7 +15,7 @@ helm registry login ghcr.io
 - Get Helm URL from GitHub Packages: For example: "docker pull ghcr.io/rampart-aios/rampart-batch-uploader/batch-uploader:0.2.1-1a567c1b"
 - Pull Helm Chart with pull script
 ```
-./script/pull.sh "docker pull ghcr.io/rampart-aios/rampart-batch-uploader/batch-uploader:0.2.1-1a567c1b"
+./scripts/pull.sh "docker pull ghcr.io/rampart-aios/rampart-batch-uploader/batch-uploader:0.2.1-1a567c1b"
 ```
 ### 3b. Delete unused snapshot from OCI registry
 ```
