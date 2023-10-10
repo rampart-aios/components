@@ -9,7 +9,7 @@ entries:
         outputs: []
     apiVersion: v2
     appVersion: 2.15.2-debian
-    created: "2023-10-10T14:50:38.356265+04:00"
+    created: "2023-10-10T15:03:21.442839+04:00"
     dependencies:
     - condition: etcd.enabled
       name: etcd
@@ -28,9 +28,9 @@ entries:
   apisix-dashboard:
   - apiVersion: v2
     appVersion: 2.15.0-alpine
-    created: "2023-10-10T14:50:38.357049+04:00"
+    created: "2023-10-10T15:03:21.443533+04:00"
     description: A Helm chart for Apache APISIX Dashboard
-    digest: 59e0504f19efcec9360f124c067d7d2349cae56eb12ac8dd661fe30e50de206a
+    digest: 17ae73a84a857f6b346d320aab91747bd991e306a641dff95c2f34b16bd74640
     icon: https://apache.org/logos/res/apisix/apisix.png
     maintainers:
     - name: tao12345666333
@@ -42,7 +42,7 @@ entries:
   auth-aux:
   - apiVersion: v2
     appVersion: 1.5.1
-    created: "2023-10-10T14:50:38.357694+04:00"
+    created: "2023-10-10T15:03:21.44398+04:00"
     description: A Helm auxiliary chart for auth resources in Rampart
     digest: 414603f2ecd5f7ec79f109bbadebc0a41df99601b07a2426bf5c0ef8001a0da0
     name: auth-aux
@@ -67,7 +67,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.4.0
-    created: "2023-10-10T14:50:38.359579+04:00"
+    created: "2023-10-10T15:03:21.445288+04:00"
     description: A Helm chart for Kubernetes
     digest: 8a91ca3500febd03d86e26da4fd214a65861bfaf0bd1ec8bc9bf7d9e875dfdb3
     name: batch-executor
@@ -91,7 +91,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.4.0
-    created: "2023-10-10T14:50:38.358656+04:00"
+    created: "2023-10-10T15:03:21.444608+04:00"
     description: A Helm chart for Kubernetes
     digest: 41f48a219e97b9a888d5a83dca3cb7bbd27f1e3b8c60091642ef5a26c823c8ef
     name: batch-executor
@@ -112,7 +112,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.2.1
-    created: "2023-10-10T14:50:38.362143+04:00"
+    created: "2023-10-10T15:03:21.446672+04:00"
     description: A Helm chart for Kubernetes
     digest: b4173e6f92c64cde786511e090952df24c24188bd3129eda82303c2f71138f20
     name: batch-uploader
@@ -132,7 +132,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.2.1
-    created: "2023-10-10T14:50:38.361479+04:00"
+    created: "2023-10-10T15:03:21.446209+04:00"
     description: A Helm chart for Kubernetes
     digest: dffd2ca3d735b58440b2f0cb520b28b8dabd465c1b21ec62ccb4e8151fe94605
     name: batch-uploader
@@ -152,7 +152,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.2.1
-    created: "2023-10-10T14:50:38.360255+04:00"
+    created: "2023-10-10T15:03:21.44577+04:00"
     description: A Helm chart for Kubernetes
     digest: 78cd708d468f24951e1fb3a4896b1727666170419e40aff4d1cf711a8a906324
     name: batch-uploader
@@ -168,7 +168,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: latest
-    created: "2023-10-10T14:50:38.366146+04:00"
+    created: "2023-10-10T15:03:21.450069+04:00"
     description: A Helm chart for Kubernetes
     digest: 99680d1531065ef4060357fc2444be4cc343ed6f63a3a3f2d551d99df45119b7
     name: generic-service
@@ -183,7 +183,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: latest
-    created: "2023-10-10T14:50:38.364305+04:00"
+    created: "2023-10-10T15:03:21.448458+04:00"
     description: A Helm chart for Kubernetes
     digest: 28b485b88d50eb4cf0d61a7a47550154c3f81a9c189e90db6567e4a30eb82c3e
     name: generic-service
@@ -194,7 +194,7 @@ entries:
   jupyterlab-component:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2023-10-10T14:50:38.367162+04:00"
+    created: "2023-10-10T15:03:21.450819+04:00"
     description: A Helm chart for Kubernetes
     digest: c23aa4c01fcee4dea44eb87d68c4a50dbfdb21ae94b7cd0cec6517bae8db18bf
     name: jupyterlab-component
@@ -211,7 +211,7 @@ entries:
         requires: []
     apiVersion: v2
     appVersion: 0.4.0
-    created: "2023-10-10T14:50:38.380622+04:00"
+    created: "2023-10-10T15:03:21.463103+04:00"
     dependencies:
     - alias: operator
       name: kuberay-operator
@@ -234,7 +234,7 @@ entries:
         requires: ["KuberayOperator"]
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-10T14:50:38.382809+04:00"
+    created: "2023-10-10T15:03:21.465031+04:00"
     description: A Helm chart for Kubernetes
     digest: b080a9e81befe57339ae66173695ca47cdf2ba7f13b3d1578837ab0311cfc120
     name: ray-cluster
@@ -251,7 +251,7 @@ entries:
         requires: ["KuberayOperator"]
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2023-10-10T14:50:38.385111+04:00"
+    created: "2023-10-10T15:03:21.466652+04:00"
     description: A Helm chart for Kubernetes
     digest: 38a45b1413b9f332e52bd8ce6e65ac66377a86cea8f6e6562c37e2df9118c6fb
     name: ray-job
@@ -268,7 +268,7 @@ entries:
         outputs: []
     apiVersion: v2
     appVersion: 0.0.0
-    created: "2023-10-10T14:50:38.385854+04:00"
+    created: "2023-10-10T15:03:21.467218+04:00"
     description: A Helm chart for Kubernetes
     digest: 7437a56def00e24d023f53cd370b0c6d085b20b316225f03604973099d1a732c
     name: tensorboard
@@ -276,4 +276,4 @@ entries:
     urls:
     - tensorboard-0.5.1-b6e79f2a.tgz
     version: 0.5.1-b6e79f2a
-generated: "2023-10-10T14:50:38.349215+04:00"
+generated: "2023-10-10T15:03:21.437885+04:00"
