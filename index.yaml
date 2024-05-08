@@ -9,7 +9,7 @@ entries:
         outputs: []
     apiVersion: v2
     appVersion: 2.15.2-debian
-    created: "2024-05-07T15:53:59.3304+04:00"
+    created: "2024-05-08T11:15:56.585394+04:00"
     dependencies:
     - condition: etcd.enabled
       name: etcd
@@ -33,7 +33,7 @@ entries:
         outputs: []
     apiVersion: v2
     appVersion: 2.15.2-debian
-    created: "2024-05-07T15:53:59.327489+04:00"
+    created: "2024-05-08T11:15:56.582368+04:00"
     dependencies:
     - condition: etcd.enabled
       name: etcd
@@ -52,7 +52,7 @@ entries:
   apisix-dashboard:
   - apiVersion: v2
     appVersion: 2.15.0-alpine
-    created: "2024-05-07T15:53:59.332839+04:00"
+    created: "2024-05-08T11:15:56.586004+04:00"
     description: A Helm chart for Apache APISIX Dashboard
     digest: 17ae73a84a857f6b346d320aab91747bd991e306a641dff95c2f34b16bd74640
     icon: https://apache.org/logos/res/apisix/apisix.png
@@ -66,7 +66,7 @@ entries:
   auth-aux:
   - apiVersion: v2
     appVersion: 1.5.1
-    created: "2024-05-07T15:53:59.334527+04:00"
+    created: "2024-05-08T11:15:56.586491+04:00"
     description: A Helm auxiliary chart for auth resources in Rampart
     digest: 414603f2ecd5f7ec79f109bbadebc0a41df99601b07a2426bf5c0ef8001a0da0
     name: auth-aux
@@ -91,7 +91,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.4.0
-    created: "2024-05-07T15:53:59.335383+04:00"
+    created: "2024-05-08T11:15:56.587125+04:00"
     description: A Helm chart for Kubernetes
     digest: 347209f2d98aacc0a3cd64a88ec0c8eab4736411e842743397f629da8b678b65
     name: batch-executor
@@ -112,7 +112,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: 0.2.1
-    created: "2024-05-07T15:53:59.336034+04:00"
+    created: "2024-05-08T11:15:56.587662+04:00"
     description: A Helm chart for Kubernetes
     digest: 07f7c1341c307fe281e55b14b04bb31d33e44b11608a2324ee95ca5d98e2e673
     name: batch-uploader
@@ -128,7 +128,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: latest
-    created: "2024-05-07T15:53:59.340579+04:00"
+    created: "2024-05-08T11:15:56.590593+04:00"
     description: A Helm chart for Kubernetes
     digest: 99680d1531065ef4060357fc2444be4cc343ed6f63a3a3f2d551d99df45119b7
     name: generic-service
@@ -143,7 +143,7 @@ entries:
           system: false
     apiVersion: v2
     appVersion: latest
-    created: "2024-05-07T15:53:59.337439+04:00"
+    created: "2024-05-08T11:15:56.589005+04:00"
     description: A Helm chart for Kubernetes
     digest: 28b485b88d50eb4cf0d61a7a47550154c3f81a9c189e90db6567e4a30eb82c3e
     name: generic-service
@@ -154,7 +154,7 @@ entries:
   jupyterlab-component:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2024-05-07T15:53:59.341541+04:00"
+    created: "2024-05-08T11:15:56.591416+04:00"
     description: A Helm chart for Kubernetes
     digest: c23aa4c01fcee4dea44eb87d68c4a50dbfdb21ae94b7cd0cec6517bae8db18bf
     name: jupyterlab-component
@@ -171,7 +171,7 @@ entries:
         requires: []
     apiVersion: v2
     appVersion: 0.4.0
-    created: "2024-05-07T15:53:59.347797+04:00"
+    created: "2024-05-08T11:15:56.596886+04:00"
     dependencies:
     - alias: operator
       name: kuberay-operator
@@ -188,17 +188,17 @@ entries:
   rampart-dashboard:
   - apiVersion: v2
     appVersion: 2.5.1
-    created: "2024-05-07T15:53:59.35035+04:00"
+    created: "2024-05-08T11:15:56.598399+04:00"
     description: A Helm chart for Kubernetes
-    digest: b81ff3009fe23bd168999be5fdced5697dbd786fff463eb216fbc6064b990161
+    digest: 4e3ed72a5a5e32d78d2d243bc8e167e43139ad7ae19a036d3ab085b30328d812
     name: rampart-dashboard
     type: application
     urls:
-    - rampart-dashboard-1.0.0-89a4f17c.tgz
-    version: 1.0.0-89a4f17c
+    - rampart-dashboard-1.0.0-e50977f0.tgz
+    version: 1.0.0-e50977f0
   - apiVersion: v2
     appVersion: 2.5.1
-    created: "2024-05-07T15:53:59.348643+04:00"
+    created: "2024-05-08T11:15:56.597873+04:00"
     description: A Helm chart for Kubernetes
     digest: 779d711dcfb8d17c37a2aabd2e61cc028292d947667717be7d232c050b93140a
     name: rampart-dashboard
@@ -209,7 +209,7 @@ entries:
   rampart-grafana:
   - apiVersion: v2
     appVersion: 0.0.0
-    created: "2024-05-07T15:53:59.361473+04:00"
+    created: "2024-05-08T11:15:56.610186+04:00"
     dependencies:
     - name: loki
       repository: https://grafana.github.io/helm-charts
@@ -239,7 +239,7 @@ entries:
         requires: ["KuberayOperator"]
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-07T15:53:59.363183+04:00"
+    created: "2024-05-08T11:15:56.6116+04:00"
     description: A Helm chart for Kubernetes
     digest: b080a9e81befe57339ae66173695ca47cdf2ba7f13b3d1578837ab0311cfc120
     name: ray-cluster
@@ -256,7 +256,7 @@ entries:
         requires: ["KuberayOperator"]
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2024-05-07T15:53:59.364479+04:00"
+    created: "2024-05-08T11:15:56.612893+04:00"
     description: A Helm chart for Kubernetes
     digest: 38a45b1413b9f332e52bd8ce6e65ac66377a86cea8f6e6562c37e2df9118c6fb
     name: ray-job
@@ -273,7 +273,7 @@ entries:
         outputs: []
     apiVersion: v2
     appVersion: 0.0.0
-    created: "2024-05-07T15:53:59.365041+04:00"
+    created: "2024-05-08T11:15:56.614074+04:00"
     description: A Helm chart for Kubernetes
     digest: 7437a56def00e24d023f53cd370b0c6d085b20b316225f03604973099d1a732c
     name: tensorboard
@@ -281,4 +281,4 @@ entries:
     urls:
     - tensorboard-0.5.1-b6e79f2a.tgz
     version: 0.5.1-b6e79f2a
-generated: "2024-05-07T15:53:59.324067+04:00"
+generated: "2024-05-08T11:15:56.579132+04:00"
